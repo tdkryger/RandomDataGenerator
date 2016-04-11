@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDataGenerator", "Rand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLRandomDataGenerator", "CLRandomDataGenerator\CLRandomDataGenerator.csproj", "{DB2A2AAC-5C30-499C-9F2D-4A3C98725F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestRandomDataGenerator", "UnitTestRandomDataGenerator\UnitTestRandomDataGenerator.csproj", "{4BE93814-C334-4B3E-8064-D8CCFF05532E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DB2A2AAC-5C30-499C-9F2D-4A3C98725F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB2A2AAC-5C30-499C-9F2D-4A3C98725F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB2A2AAC-5C30-499C-9F2D-4A3C98725F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BE93814-C334-4B3E-8064-D8CCFF05532E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE93814-C334-4B3E-8064-D8CCFF05532E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE93814-C334-4B3E-8064-D8CCFF05532E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE93814-C334-4B3E-8064-D8CCFF05532E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
