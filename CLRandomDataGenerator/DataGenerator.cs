@@ -64,6 +64,16 @@ namespace CLRandomDataGenerator
             return _rnd.Next(min, max);
         }
 
+        public string GenerateRandomEmail()
+        {
+            return GenerateRandomWord(10) + "@" + GenerateRandomWord(20) + ".nowhere";
+        }
+
+        public string GenerateRandomPhoneNumber()
+        {
+            return GenerateRandomId(10000000, 99999999).ToString();
+        }
+
         public string GenerateRandomWord(int numLetters)
         {
             // Make an array of the letters we will use.
@@ -134,6 +144,10 @@ namespace CLRandomDataGenerator
             return line.Trim();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public NameAddressEntry GenerateNameAddressEntry()
         {
             NameAddressEntry.SexValues sex = NameAddressEntry.SexValues.Unknown;
@@ -149,7 +163,9 @@ namespace CLRandomDataGenerator
                 streetName: GenerateStreetNamesFromZip(zipCode),
                 sex: sex,
                 streetNumber: GenerateRandomId(1, 500),
-                age: GenerateRandomId(0, 100));
+                age: GenerateRandomId(0, 100),
+                email: GenerateRandomEmail(),
+                phone: GenerateRandomPhoneNumber());
         }
 
         public Dictionary<int, NameAddressEntry> GenerateNameAddressEntry(int count)
